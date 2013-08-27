@@ -3,7 +3,7 @@
 <ul>
 <% _.each(list, function (item) { %>
     <li>
-    <%=item.mtime%> - 
+    <%=item.mtime.replace(/T.+$/g, '')%> - 
     <a href="/markdown?p=<%=item.name%>" target="_blank"><%=item.name%></a>
     </li>
 <% }) %>
