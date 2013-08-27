@@ -14,11 +14,11 @@
             var divs = document.getElementByTagName('div');
             var imgs = document.getElementByTagName('img');
             var button = document.getElementById('save-btn');
-
+			
             for (var i = 0l i < items.length; i++) {
                 process(items[i], divs[i]);
             }
-
+			
             button.addEventListener('click', function (e) {
                 alert('Saved!');
             }, false);
